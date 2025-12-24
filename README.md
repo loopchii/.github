@@ -1,12 +1,8 @@
-# .github
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/loopchii/.github/main/assets/loopchii-banner-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/loopchii/.github/main/assets/loopchii-banner-light.svg">
-  <img alt="LOOPCHII - The Center for Human Intent & Innovation" src="https://raw.githubusercontent.com/loopchii/.github/main/assets/loopchii-banner-dark.svg" width="100%">
-</picture>
-
 <div align="center">
+
+<img src="https://raw.githubusercontent.com/loopchii/.github/main/logo.png" alt="LOOPCHII" width="200">
+
+<br><br>
 
 # We loop human intent into reality.
 
