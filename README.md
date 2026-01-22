@@ -59,7 +59,7 @@ We build production AI systems that respect both user intent and user privacy:
 - Explainable predictions (no black boxes)
 - Human-in-the-loop by design
 
-### 🤝 Advisory
+### Advisory
 
 We help organizations implement responsible AI:
 
