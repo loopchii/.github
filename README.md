@@ -1,154 +1,46 @@
-<div align="center">
+# LOOPCHii on GitHub
 
-<img src="https://raw.githubusercontent.com/loopchii/.github/main/logo.png" alt="LOOPCHII" width="200">
+This repository powers the public-facing Loopchii organization profile and the GitHub Pages front door for people who want an inspectable entry point into the work.
 
-<br><br>
+It is intentionally narrow.
 
-# We loop human intent into reality.
+- It publishes public surfaces, contribution paths, and standards-facing materials.
+- It does not publish private runtime systems, customer logic, or implementation detail that would map cleanly onto proprietary architecture.
 
-**AI research & development that transforms messy human goals into measurable, responsible products.**
+## What Lives Here
 
-[![Website](https://img.shields.io/badge/loopchii.com-7B8DFF?style=for-the-badge&logo=safari&logoColor=white)](https://loopchii.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-4B5ED7?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/company/loopchii)
-[![Email](https://img.shields.io/badge/Contact-FF9F68?style=for-the-badge&logo=gmail&logoColor=white)](mailto:loopchii.tech@gmail.com)
+- `profile/README.md`
+  The organization profile shown on the Loopchii GitHub page.
 
-</div>
+- `docs/`
+  A static GitHub Pages site for engineers, researchers, operators, and curious people who want a clean way into the public work.
 
----
+- `CONTRIBUTING.md`
+  Contribution boundaries for this repository.
 
-## The Problem
+- `SECURITY.md`
+  How to report issues responsibly.
 
-Most AI solves problems no one had. It optimizes for metrics that don't matter. It ships fast and breaks trust.
+## Public Entry Points
 
-**We think there's a better way.**
+- [Open the GitHub Pages front door](https://loopchii.github.io/.github/)
+- [Explore Stream](https://github.com/loopchii/Stream)
+- [Visit loopchii.com](https://www.loopchii.com/)
+- [Visit loopchii.space](https://www.loopchii.space/)
 
----
+## Local Preview
 
-## Our Approach
+From this repository root:
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                                                                 │
-│    HUMAN INTENT    →    LOOPCHII    →    MEASURABLE REALITY     │
-│                                                                 │
-│    "I want to feel      Research       Products that actually   │
-│     more energetic"     & Development   improve your energy     │
-│                                                                 │
-└─────────────────────────────────────────────────────────────────┘
-```
-
-We start with what humans actually want—not what's easy to build. Then we loop continuously: prototype, measure, learn, improve. Every product we ship closes the gap between **intent** and **outcome**.
-
----
-
-## What We Build
-
-### 🔬 Research
-
-We develop novel algorithms for personalized AI systems, with a focus on:
-
-- **Serendipity Detection** — Finding unexpected patterns in the tails of your data
-- **Health Equity** — Identifying and correcting algorithmic bias in health applications  
-- **Digital Twins** — Personal simulations for testing changes before you make them
-
-### 🛠️ Development
-
-We build production AI systems that respect both user intent and user privacy:
-
-- HIPAA/GDPR compliant architectures
-- Explainable predictions (no black boxes)
-- Human-in-the-loop by design
-
-### Advisory
-
-We help organizations implement responsible AI:
-
-- Governance frameworks
-- Bias audits
-- Compliance strategy
-
----
-
-## Featured Projects
-
-| Repository | Description | Status |
-|------------|-------------|--------|
-| [Serendipity-Finder](https://github.com/loopchii/Serendipity-Finder) | Algorithm for discovering unexpected correlations in distribution tails | 🟢 Active |
-| [Wearable-Health-Data](https://github.com/loopchii/Wearable-Health-Data) | Health equity analysis toolkit for wearable data | 🟢 Active |
-
----
-
-## Our Principles
-
-<table>
-<tr>
-<td width="33%" valign="top">
-
-### Intent First
-We don't build features. We build outcomes. Every line of code serves a human goal.
-
-</td>
-<td width="33%" valign="top">
-
-### Loop Continuously  
-Ship → Measure → Learn → Improve. The loop never stops. Neither do we.
-
-</td>
-<td width="33%" valign="top">
-
-### Transparent Always
-If we can't explain it, we don't ship it. Trust is earned through clarity.
-
-</td>
-</tr>
-</table>
-
----
-
-## The Name
-
-**LOOPCHII** = **The Center for Human Intent & Innovation**
-
-```
-L O O P C H I I
-      └─┬─┘ └─┬─┘
-        │     │
-        │     └── Intent & Innovation
-        │
-        └──────── Center for Human
+```bash
+cd docs
+python3 -m http.server 4173
 ```
 
-The **loop** is our method: iterate until intent becomes reality.  
-**CHII** is our mission: keep humans at the center of AI.
+Then open `http://127.0.0.1:4173`.
 
----
+## Boundary
 
-## Connect
+Loopchii publishes public research surfaces, standards language, and inspectable examples here.
 
-<div align="center">
-
-**Ready to loop your intent into reality?**
-
-We're taking on select research collaborations and advisory engagements.
-
-📧 [loopchii.tech@gmail.com](mailto:loopchii.tech@gmail.com)
-
-🌐 [loopchii.com](https://loopchii.com)
-
-💼 [LinkedIn](https://linkedin.com/company/loopchii)
-
-</div>
-
----
-
-<div align="center">
-
-<sub>
-
-**LOOPCHII** · Bend, Oregon · Est. 2025
-
-*Building AI that loops human intent into reality.*
-
-</sub>
-
-</div>
+Loopchii does not publish private runtime mechanics, internal enforcement ordering, customer-shaped deployment logic, or proprietary implementation detail here.

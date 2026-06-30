@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Loopchii Open Field</title>
+  <meta name="description" content="Loopchii Open Field is the public GitHub front door for engineers, researchers, operators, and curious people who want a clean, inspectable path into Loopchii's public work.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#0f1430">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Loopchii Open Field">
+  <meta property="og:description" content="Public research surfaces, contribution paths, and a serious front door into Loopchii's public work.">
+  <meta property="og:image" content="./assets/loopchii-og.png">
+  <meta property="og:url" content="https://loopchii.github.io/.github/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Loopchii Open Field">
+  <meta name="twitter:description" content="Public research surfaces, contribution paths, and a serious front door into Loopchii's public work.">
+  <meta name="twitter:image" content="./assets/loopchii-og.png">
+  <link rel="icon" type="image/png" href="./assets/loopchii-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <canvas id="signal-field" aria-hidden="true"></canvas>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand-lockup" href="https://github.com/loopchii" aria-label="Loopchii on GitHub">
+        <img src="./assets/loopchii-logo.png" alt="Loopchii logo">
+        <span>LOOPCHii</span>
+      </a>
+      <nav class="topnav" aria-label="Primary">
+        <a href="https://github.com/loopchii/Stream">Stream</a>
+        <a href="https://www.loopchii.com/">Website</a>
+        <a href="https://www.loopchii.space/">Research</a>
+        <a href="mailto:hello@loopchii.com">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy glass-panel">
+          <p class="eyebrow">Open Source Field</p>
+          <h1>
+            Make the public work
+            <span class="gradient-text">worth trusting.</span>
+          </h1>
+          <p class="hero-text">
+            Loopchii uses this open field to publish research surfaces, framework notes, and contribution paths for people who want something concrete to read, test, question, and build from. We study consequential systems in the places with the least room for error, where behavior breaks before the cost lands on a person. The goal is credibility without over-narration: enough to understand the posture, without pretending this page has to tell the whole story.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://github.com/loopchii/Stream">Explore Stream</a>
+            <a class="button button-secondary" href="https://www.loopchii.com/">Visit loopchii.com</a>
+            <a class="button button-secondary" href="mailto:hello@loopchii.com?subject=Loopchii%20Research%20and%20Collaboration">Research is welcome</a>
+          </div>
+          <ul class="signal-strip" id="signal-strip" aria-live="polite"></ul>
+        </div>
+
+        <aside class="hero-console glass-panel">
+          <p class="eyebrow">Trust In Public</p>
+          <div class="console-grid">
+            <article>
+              <span>Public work</span>
+              <strong id="repo-count">01</strong>
+              <p>Real repositories, live routes, and inspectable artifacts people can open now.</p>
+            </article>
+            <article>
+              <span>Framework posture</span>
+              <strong id="route-count">04</strong>
+              <p>Ethics, review, and consequence translated into public language.</p>
+            </article>
+            <article>
+              <span>Review</span>
+              <strong>Human</strong>
+              <p>The public story should still make room for contest, recourse, and second looks.</p>
+            </article>
+            <article>
+              <span>Contact</span>
+              <strong>Human</strong>
+              <p>A real address, not a maze of forms.</p>
+            </article>
+          </div>
+        </aside>
+      </section>
+
+      <section class="audience-section glass-panel">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Choose A Path</p>
+            <h2>Start from the kind of work you came for.</h2>
+          </div>
+          <p class="section-note">
+            The public surface should meet people where they are. It can hold engineering, research, ethics, and operational trust in the same place without forcing everyone through the same story.
+          </p>
+        </div>
+
+        <div class="audience-switcher" id="audience-switcher" role="tablist" aria-label="Audience paths"></div>
+        <div class="audience-intro" id="audience-intro"></div>
+        <div class="audience-cards" id="audience-cards"></div>
+      </section>
+
+      <section class="framework-section glass-panel">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Framework Notes</p>
+            <h2>What the public surface should make legible.</h2>
+          </div>
+          <p class="section-note">
+            Not the full internal system. The public framework around how the work thinks about trust, review, and consequence.
+          </p>
+        </div>
+
+        <div class="framework-grid">
+          <article class="framework-note">
+            <span>Ethics</span>
+            <strong>Consequence should stay visible.</strong>
+            <p>Ethics becomes useful when people can see where a system touches a person, a right, a record, or a decision that matters.</p>
+          </article>
+          <article class="framework-note">
+            <span>Governance</span>
+            <strong>Review has to arrive in time.</strong>
+            <p>Governance is not just policy language after the fact. It is the ability to pause, review, explain, and change course while the outcome is still movable.</p>
+          </article>
+          <article class="framework-note">
+            <span>Trust</span>
+            <strong>Claims should survive inspection.</strong>
+            <p>Trust grows when the public material is readable, bounded, and open to challenge rather than inflated past what can actually be shown.</p>
+          </article>
+          <article class="framework-note">
+            <span>Interoperability</span>
+            <strong>People need language they can share.</strong>
+            <p>Engineers, researchers, operators, policy teams, and investors rarely start from the same vocabulary. Public work should still let them meet.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="ethos-section glass-panel">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Loopchii Ethos</p>
+            <h2>Study the places where systems have the least room to fail.</h2>
+          </div>
+          <p class="section-note">
+            High-risk domains matter because that is where ethics, policy, evidence, review, and implementation stop being separate conversations.
+          </p>
+        </div>
+
+        <div class="domain-cloud" aria-label="High-risk domains under study">
+          <span class="domain-pill">Health</span>
+          <span class="domain-pill">Policy</span>
+          <span class="domain-pill">Media</span>
+          <span class="domain-pill">Public systems</span>
+          <span class="domain-pill">Rights</span>
+          <span class="domain-pill">Data stewardship</span>
+          <span class="domain-pill">Human review</span>
+          <span class="domain-pill">Consequence</span>
+        </div>
+
+        <div class="ethos-grid">
+          <article class="ethos-card">
+            <span>Why we study them</span>
+            <strong>This is where AI stops being abstract.</strong>
+            <p>High-risk domains make weak assumptions visible early. They show where systems drift, oversimplify, automate the wrong thing, or leave people with no meaningful way back.</p>
+          </article>
+          <article class="ethos-card">
+            <span>What research is for</span>
+            <strong>Research is welcome when it sharpens judgment.</strong>
+            <p>We value research that helps people understand how systems behave, where they break, what they overlook, and what needs to stay open to human correction.</p>
+          </article>
+          <article class="ethos-card">
+            <span>The standard</span>
+            <strong>Human consequence outranks product speed.</strong>
+            <p>The strongest systems are not the ones that move the fastest. They are the ones that still hold shape when the outcome affects a person, a right, a record, or a public decision.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="three-up">
+        <article class="glass-panel manifesto-card">
+          <p class="eyebrow">What Belongs Here</p>
+          <h3>Public work should help people understand what is being taken seriously.</h3>
+          <p>
+            Research surfaces, contribution lanes, framework notes, and standards-facing documentation belong in public when they make decisions clearer without pretending to be the whole system.
+          </p>
+        </article>
+
+        <article class="glass-panel manifesto-card">
+          <p class="eyebrow">What We Abstract On Purpose</p>
+          <h3>The public surface should not collapse into implementation disclosure.</h3>
+          <p>
+            Some details belong in the environments where they are actually used. The public story should stay legible, serious, and useful instead of trying to explain everything at once.
+          </p>
+        </article>
+
+        <article class="glass-panel manifesto-card">
+          <p class="eyebrow">Why People Return</p>
+          <h3>Because the public surface still teaches something real.</h3>
+          <p>
+            The best public technical surfaces give people something to inspect, learn from, improve, or send onward. They leave behind language, judgment, and questions worth keeping.
+          </p>
+        </article>
+      </section>
+
+      <section class="link-grid-section glass-panel">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Signal Routes</p>
+            <h2>Public places worth opening next.</h2>
+          </div>
+          <p class="section-note">
+            Each route serves a different kind of attention. None of them needs to narrate the entire company.
+          </p>
+        </div>
+
+        <div class="link-grid">
+          <a class="link-card" href="https://github.com/loopchii/Stream">
+            <span class="link-kicker">Public Repository</span>
+            <strong>Stream</strong>
+            <p>Inspectable media-analysis work with an active dashboard, public lens SDK, and contribution path.</p>
+            <span class="link-cta">Open repo</span>
+          </a>
+
+          <a class="link-card" href="https://www.loopchii.com/">
+            <span class="link-kicker">Company Site</span>
+            <strong>loopchii.com</strong>
+            <p>The public company surface for context, contact, and the broader signal around the work.</p>
+            <span class="link-cta">Visit site</span>
+          </a>
+
+          <a class="link-card" href="https://www.loopchii.space/">
+            <span class="link-kicker">Research Environment</span>
+            <strong>loopchii.space</strong>
+            <p>The working environment where public research becomes applied work and more active study.</p>
+            <span class="link-cta">Enter research</span>
+          </a>
+
+          <a class="link-card" href="mailto:hello@loopchii.com?subject=Loopchii%20Collaboration">
+            <span class="link-kicker">Contact</span>
+            <strong>hello@loopchii.com</strong>
+            <p>Use this route for collaborations, serious questions, and the kind of conversations that need an actual person.</p>
+            <span class="link-cta">Write email</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer glass-panel">
+      <div>
+        <p class="eyebrow">Loopchii</p>
+        <p class="footer-copy">
+          Public GitHub should be a clean front door: inspectable, useful, visually alive, and disciplined about what it does not explain.
+        </p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/loopchii">GitHub</a>
+        <a href="https://github.com/loopchii/Stream">Stream</a>
+        <a href="https://www.loopchii.com/">Website</a>
+        <a href="https://www.linkedin.com/company/loopchii/">LinkedIn</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
