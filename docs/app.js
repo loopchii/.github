@@ -1,15 +1,103 @@
 const signals = [
-  "Inspectable work should stay useful before it becomes persuasive.",
-  "Ethics and governance read better when they stop sounding like slogans.",
-  "High-risk domains usually reveal where systems break before anyone else wants to admit it.",
-  "Engineers trust what they can read, test, and improve without being oversold.",
-  "Research surfaces should reward curiosity without pretending to expose the whole system."
+  {
+    tone: "violet",
+    title: "Human consequence",
+    detail: "Start where a weak assumption reaches a patient, a child, a worker, or a record that can outlast the mistake.",
+    studyId: "care"
+  },
+  {
+    tone: "warm",
+    title: "Working with Loopchii",
+    detail: "Range, restraint, and cross-disciplinary reading matter here more than fast certainty.",
+    studyId: "work"
+  },
+  {
+    tone: "mint",
+    title: "Why high-risk domains",
+    detail: "They surface drift early because the cost of vague thinking arrives quickly there.",
+    studyId: "public"
+  },
+  {
+    tone: "warm",
+    title: "Media and memory",
+    detail: "Recommendation, repetition, and cataloging make system behavior easier to see.",
+    studyId: "media"
+  },
+  {
+    tone: "mint",
+    title: "Research should stay inspectable",
+    detail: "Public work earns trust when people can open it, question it, and keep going.",
+    studyId: "children"
+  }
+];
+
+const studyTracks = [
+  {
+    id: "care",
+    tone: "violet",
+    kicker: "Care systems",
+    title: "When a system touches a patient, ambiguity stops being stylish.",
+    reason:
+      "Health, triage, records, and care routing make weak claims fail quickly. They force clarity about review and what happens when a system is wrong.",
+    why:
+      "This is where a delay, a bad route, or a missing second look lands on a person first.",
+    cta: "Continue into research",
+    href: "https://www.loopchii.space/"
+  },
+  {
+    id: "children",
+    tone: "mint",
+    kicker: "Children and families",
+    title: "Youth safety is where persuasion, privacy, and design lose the right to be casual.",
+    reason:
+      "If a system shapes attention, profiles behavior, or automates contact around a minor, the design question becomes a human question immediately.",
+    why:
+      "This is where convenience, pressure, and duty become easy to tell apart.",
+    cta: "Open the public field",
+    href: "https://www.loopchii.com/"
+  },
+  {
+    id: "media",
+    tone: "warm",
+    kicker: "Media and music",
+    title: "Media systems show how memory, repetition, and influence travel.",
+    reason:
+      "Recommendation loops, cataloging, bias, and copyright pressure make media one of the clearest public laboratories for studying AI behavior.",
+    why:
+      "This is where people often feel the system before they can name it.",
+    cta: "Inspect Stream",
+    href: "https://github.com/loopchii/Stream"
+  },
+  {
+    id: "public",
+    tone: "violet",
+    kicker: "Public systems",
+    title: "Public infrastructure exposes whether review can still arrive in time.",
+    reason:
+      "Records, benefits, identity, appeals, and access decisions do not tolerate elegant language with no recovery path behind it.",
+    why:
+      "People need explanation, contest, correction, and a route back.",
+    cta: "Visit the working environment",
+    href: "https://www.loopchii.space/"
+  },
+  {
+    id: "work",
+    tone: "warm",
+    kicker: "Working with Loopchii",
+    title: "The work asks for people who can care in detail without performing certainty.",
+    reason:
+      "This is not one-discipline work. Engineering, product, policy, design, research, media, and safety all have to survive the same claim.",
+    why:
+      "Read widely, think carefully, write clearly, and leave room for correction.",
+    cta: "Write the team",
+    href: "mailto:hello@loopchii.com?subject=Loopchii%20Open%20Field"
+  }
 ];
 
 const audiencePaths = {
   engineers: {
     intro:
-      "Start with the parts that can be inspected directly: public repositories, browser surfaces, contribution guidance, and bounded claims. This path is for people who want signal before story.",
+      "Start with the parts that can be inspected directly: repositories, browser surfaces, contribution guidance, and bounded claims.",
     cards: [
       {
         tone: "cool",
@@ -22,16 +110,16 @@ const audiencePaths = {
       {
         tone: "warm",
         kicker: "Public Framework",
-        title: "Read how trust is framed",
-        copy: "See how the public surface handles ethics, review, consequence, and restraint without flattening everything into sales copy.",
+        title: "Read the field notes",
+        copy: "See how the public surface handles ethics, review, human consequence, and restraint without collapsing into product theater.",
         cta: "Read public framework",
         href: "https://github.com/loopchii/.github"
       },
       {
         tone: "mint",
         kicker: "Contact",
-        title: "Ask A Specific Question",
-        copy: "If something is unclear, the fastest route is usually a precise question with a link and a reason you care.",
+        title: "Ask a precise question",
+        copy: "If something is unclear, the shortest route is still a specific question with context, a link, and a reason you care.",
         cta: "Write hello@loopchii.com",
         href: "mailto:hello@loopchii.com?subject=Loopchii%20GitHub%20Question"
       }
@@ -39,7 +127,7 @@ const audiencePaths = {
   },
   researchers: {
     intro:
-      "This route is for people studying consequence, governance, media, trust, or the structure of technical claims. The public material is designed to be readable without flattening the work into buzzwords.",
+      "This route is for people studying consequence, behavior, media, trust, or the shape of technical claims in public.",
     cards: [
       {
         tone: "mint",
@@ -53,15 +141,15 @@ const audiencePaths = {
         tone: "violet",
         kicker: "Working Environment",
         title: "Visit loopchii.space",
-        copy: "The research environment shows how the public story and the working environment relate without collapsing into the same surface.",
+        copy: "The research environment shows how the public story and the working environment relate without pretending they are the same thing.",
         cta: "Open research",
         href: "https://www.loopchii.space/"
       },
       {
         tone: "warm",
         kicker: "Company Context",
-        title: "Use loopchii.com for context",
-        copy: "The company site gives the higher-level frame without turning public materials into a product manual.",
+        title: "Use loopchii.com for the outer frame",
+        copy: "The company site gives the broader context without turning public materials into a product manual.",
         cta: "Visit site",
         href: "https://www.loopchii.com/"
       }
@@ -69,7 +157,7 @@ const audiencePaths = {
   },
   operators: {
     intro:
-      "Operators usually need the shortest path to relevance: what exists, what can be trusted, what belongs in public, and how to reach someone without a maze.",
+      "Operators usually need the shortest path to relevance: what exists, what can be trusted, and how to reach someone without a maze.",
     cards: [
       {
         tone: "warm",
@@ -83,7 +171,7 @@ const audiencePaths = {
         tone: "cool",
         kicker: "Public Proof",
         title: "Inspect the public repo",
-        copy: "Use the public repository when you need a credible artifact instead of a marketing paragraph.",
+        copy: "Use the public repository when you need a credible artifact instead of another promise.",
         cta: "Open Stream",
         href: "https://github.com/loopchii/Stream"
       },
@@ -99,21 +187,21 @@ const audiencePaths = {
   },
   curious: {
     intro:
-      "Some people land here before they know what they need. That is fine. The point of the public surface is to make the next useful step obvious without oversharing the entire system.",
+      "Some people land here before they know what they need. The point is to make the next useful step obvious without oversharing the system.",
     cards: [
       {
         tone: "violet",
-        kicker: "Start Lightly",
-        title: "Open the field",
-        copy: "Use this page as a map: public repo, company site, research environment, and a direct human contact route.",
+        kicker: "Start Here",
+        title: "Use the field like a map",
+        copy: "Open a study track, follow a route, and let the public work tell you where to go next.",
         cta: "Stay here and explore",
-        href: "#top"
+        href: "#study"
       },
       {
         tone: "cool",
-        kicker: "Public Work",
-        title: "See one real repository",
-        copy: "If you only open one thing today, make it a repository with code, tests, and a public framework that actually says something.",
+        kicker: "One Real Artifact",
+        title: "Open a repository before a pitch",
+        copy: "If you only open one thing today, make it a repository with code, tests, and a public frame that says something.",
         cta: "Open Stream",
         href: "https://github.com/loopchii/Stream"
       },
@@ -121,7 +209,7 @@ const audiencePaths = {
         tone: "warm",
         kicker: "Company Story",
         title: "Then open the website",
-        copy: "Once you have seen the inspectable surface, the broader company story lands differently and usually more credibly.",
+        copy: "Once you have seen the inspectable surface, the broader company story usually lands more credibly and with less noise.",
         cta: "Open loopchii.com",
         href: "https://www.loopchii.com/"
       }
@@ -133,13 +221,88 @@ const switcher = document.getElementById("audience-switcher");
 const intro = document.getElementById("audience-intro");
 const cards = document.getElementById("audience-cards");
 const signalStrip = document.getElementById("signal-strip");
+const studyGrid = document.getElementById("study-grid");
+const studyDetail = document.getElementById("study-detail");
 const repoCount = document.getElementById("repo-count");
 const routeCount = document.getElementById("route-count");
 
+function getDailyOffset(size) {
+  if (!size) {
+    return 0;
+  }
+
+  const todayKey = new Date().toISOString().slice(0, 10);
+  const seed = Array.from(todayKey).reduce((sum, character) => sum + character.charCodeAt(0), 0);
+  return seed % size;
+}
+
+function rotateByOffset(items) {
+  const offset = getDailyOffset(items.length);
+  return items.slice(offset).concat(items.slice(0, offset));
+}
+
+const orderedSignals = rotateByOffset(signals);
+const orderedStudyTracks = rotateByOffset(studyTracks);
+
+function scrollToStudy() {
+  document.getElementById("study")?.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
 function renderSignals() {
-  signalStrip.innerHTML = signals
-    .map((line) => `<li>${line}</li>`)
+  signalStrip.innerHTML = orderedSignals
+    .map(
+      (signal) => `
+        <button class="signal-chip signal-chip--${signal.tone}" type="button" data-study="${signal.studyId}">
+          <strong>${signal.title}</strong>
+          <span>${signal.detail}</span>
+        </button>
+      `
+    )
     .join("");
+
+  signalStrip.querySelectorAll("[data-study]").forEach((button) => {
+    button.addEventListener("click", () => {
+      renderStudy(button.dataset.study);
+      scrollToStudy();
+    });
+  });
+}
+
+function renderStudy(selectedId) {
+  studyGrid.innerHTML = orderedStudyTracks
+    .map(
+      (track) => `
+        <button
+          class="study-card ${track.id === selectedId ? "is-active" : ""}"
+          type="button"
+          data-study-card="${track.id}"
+          data-tone="${track.tone}"
+        >
+          <span>${track.kicker}</span>
+          <strong>${track.title}</strong>
+        </button>
+      `
+    )
+    .join("");
+
+  const selected = orderedStudyTracks.find((track) => track.id === selectedId) ?? orderedStudyTracks[0];
+
+  studyDetail.innerHTML = `
+    <div class="study-detail-panel" data-tone="${selected.tone}">
+      <p class="study-detail-kicker">${selected.kicker}</p>
+      <h3>${selected.title}</h3>
+      <p>${selected.reason}</p>
+      <p class="study-detail-impact">${selected.why}</p>
+      <div class="study-detail-actions">
+        <a class="study-detail-link" href="${selected.href}">${selected.cta}</a>
+        <span class="study-detail-note">Public continuation, not the whole map.</span>
+      </div>
+    </div>
+  `;
+
+  studyGrid.querySelectorAll("[data-study-card]").forEach((button) => {
+    button.addEventListener("click", () => renderStudy(button.dataset.studyCard));
+  });
 }
 
 function renderAudience(selectedKey) {
@@ -255,6 +418,7 @@ function bootSignalField() {
 }
 
 renderSignals();
+renderStudy(orderedStudyTracks[0]?.id);
 setCounts();
 renderAudience("engineers");
 bootSignalField();
