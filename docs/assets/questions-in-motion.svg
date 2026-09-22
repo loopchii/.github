@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="300" viewBox="0 0 1080 300" role="img" aria-labelledby="title desc">
+<title id="title">Good questions travel.</title><desc id="desc">People, places and play: three lenses for exploring the consequences of technology. What changes when a model meets a life?</desc>
+<defs><linearGradient id="spectrum"><stop stop-color="#91e7eb"/><stop offset=".5" stop-color="#bbb7f5"/><stop offset="1" stop-color="#efc1d9"/></linearGradient><radialGradient id="glow"><stop stop-color="#3b446d" stop-opacity=".55"/><stop offset="1" stop-color="#091222" stop-opacity="0"/></radialGradient><clipPath id="type"><rect class="reveal" x="60" y="66" width="970" height="62"/></clipPath></defs>
+<style>.reveal{animation:write 2.8s steps(42,end) 1}.thread{stroke-dasharray:4 110;animation:flow 4.8s linear 1}.orbit{transform-origin:914px 142px;animation:turn 4.8s ease-out 1}@keyframes write{from{width:0}to{width:970px}}@keyframes flow{from{stroke-dashoffset:360}to{stroke-dashoffset:0}}@keyframes turn{from{transform:rotate(-80deg)}to{transform:rotate(0deg)}}@media(prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<rect width="1080" height="300" rx="32" fill="#091222"/><ellipse cx="880" cy="140" rx="300" ry="240" fill="url(#glow)"/>
+<g fill="none" stroke="url(#spectrum)" opacity=".25"><ellipse cx="914" cy="142" rx="132" ry="67" transform="rotate(-35 914 142)"/><ellipse cx="914" cy="142" rx="132" ry="67" transform="rotate(35 914 142)"/><circle cx="914" cy="142" r="95"/></g>
+<g class="orbit" fill="#b8d5f1"><circle cx="914" cy="47" r="5"/><circle cx="1000" cy="183" r="3"/><circle cx="826" cy="179" r="4"/></g>
+<text x="60" y="47" font-family="monospace" font-size="13" letter-spacing="3" fill="#a4cedb">GOOD QUESTIONS TRAVEL.</text>
+<text x="60" y="107" clip-path="url(#type)" font-family="Georgia,serif" font-size="38" fill="url(#spectrum)">What changes when a model meets a life?</text>
+<path d="M60 168 C245 108 290 221 475 168 S704 116 928 168" fill="none" stroke="url(#spectrum)" stroke-width="2" opacity=".24"/>
+<path class="thread" d="M60 168 C245 108 290 221 475 168 S704 116 928 168" fill="none" stroke="url(#spectrum)" stroke-width="3"/>
+<g font-family="sans-serif" font-size="19" fill="#d4e7f0"><circle cx="82" cy="170" r="5" fill="#91e7eb"/><text x="60" y="237">People. Who gets a say?</text><circle cx="457" cy="174" r="5" fill="#bbb7f5"/><text x="400" y="237">Places. What changes here?</text><circle cx="854" cy="153" r="5" fill="#efc1d9"/><text x="783" y="237">Play. Why not begin?</text></g>
+<text x="60" y="273" font-family="monospace" font-size="12" fill="#a8bbce" letter-spacing="1">THREE LENSES. ONE INVITATION TO LOOK AGAIN. ↗</text></svg>
