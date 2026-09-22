@@ -10,6 +10,13 @@
   <p><a href="https://www.loopchii.com/research/">Read the research</a> &nbsp; · &nbsp; <a href="https://www.loopchii.com/design/">Explore the design</a> &nbsp; · &nbsp; <a href="https://www.loopchii.com/contact/">Start a conversation</a></p>
 </div>
 
+<details>
+<summary><b>Let the cloud wander ↻</b></summary>
+<br>
+<img src="https://raw.githubusercontent.com/loopchii/.github/main/docs/assets/cloud-in-motion.svg" alt="The LOOPCHii cloud drifting through cyan, lilac and rose paths" width="100%">
+<p><sub>Close this panel to hide the motion, or use your device’s reduced-motion setting.</sub></p>
+</details>
+
 <img src="https://raw.githubusercontent.com/loopchii/.github/main/docs/assets/section-curiosity.svg" alt="" width="100%">
 
 ### Questions worth building around
@@ -21,6 +28,31 @@ Academic fields have useful boundaries. Real consequences rarely respect them. A
 We like data, 3D worlds and questions that refuse to stay in one discipline. In high-risk settings, that curiosity comes with responsibility: evidence should be open to challenge, uncertainty should remain visible, and people should have a say in what affects them.
 
 Serious work does not require a joyless world. We checked.
+
+<details>
+<summary><b>For the person building it · What happens when the world changes?</b></summary>
+
+A system’s behavior matters beyond the conditions it was designed around. Missing data, unfamiliar settings and conflicting needs are good reasons to ask a better question—not inconveniences to explain away.
+
+[Explore the research](https://www.loopchii.com/research/)
+</details>
+
+<details>
+<summary><b>For the person reading the data · Does the average describe anyone in the room?</b></summary>
+
+A useful number still needs context. We care about what a result can support, who it represents, and which differences disappear when everything is compressed into one score.
+
+[Look more closely at evaluation](https://www.loopchii.live/)
+</details>
+
+<details>
+<summary><b>For the person asking why · Who gets to disagree?</b></summary>
+
+People affected by a system may notice something its makers did not. Keeping room for that challenge is part of how we think about responsible progress.
+
+[Read our ethos](https://www.loopchii.com/ethos/)
+</details>
+
 
 <a href="https://loopchii.github.io/.github/#explore"><img src="https://raw.githubusercontent.com/loopchii/.github/main/docs/assets/ecosystem-flow.svg" alt="Public ecosystem: the company connects to Space for research exploration, Live for evaluation, Cloud and Online previews, and Games for play. This is a map of destinations, not technical architecture." width="100%"></a>
 
@@ -60,12 +92,38 @@ Planned for **iOS, Mac, Apple Watch and Google Play**. Visit the [game preview](
 
 For a research collaboration or a focused software or design project, [tell us what you are trying to understand](https://www.loopchii.com/contact/). For investment conversations, [start with the company’s investor introduction](https://www.loopchii.com/investors/).
 
+### A small detour for a curious mind
+
+Five points in each pattern. Remove **any one line**. Which pattern always keeps all five points connected?
+
+<img src="https://raw.githubusercontent.com/loopchii/.github/main/docs/assets/one-missing-thread.svg" alt="Graph puzzle. A edges: 1–2, 2–3, 3–4, 4–5. B edges: 1–2, 2–3, 3–4, 4–5, 5–1. C edges: 1–2, 2–3, 3–4, 4–1, 4–5. Which stays connected after any single edge is removed?" width="100%">
+
+<details>
+<summary><b>A · The scenic route</b></summary>
+
+A is a chain. Remove any link and it separates into two pieces. Beautiful route; no way around the gap. Try another pattern.
+</details>
+
+<details>
+<summary><b>B · A little more loop</b></summary>
+
+**That’s it.** Every point has a route around the other side. Removing one line opens the loop, but all five points remain connected.
+
+In graph theory, none of these edges is a *bridge*. A modest observation with a useful habit behind it: ask what remains true when an assumption changes.
+</details>
+
+<details>
+<summary><b>C · The interesting branch</b></summary>
+
+Most of C has an alternate route, but point 5 has only one connection. Remove line 4–5 and that point is cut off. The exception changes the answer.
+</details>
+
 <a href="https://loopchii.github.io/.github/#constellation"><img src="https://raw.githubusercontent.com/loopchii/.github/main/docs/assets/constellation-invitation.svg" width="100%" alt="Play the five-light constellation on our interactive introduction"></a>
 
 <div align="center">
   <a href="https://loopchii.github.io/.github/"><img src="https://raw.githubusercontent.com/loopchii/.github/main/docs/assets/cloud-river.png" alt="A luminous LOOPCHii cloud with flowing blue, lilac and rose flowers. Open the interactive introduction." width="100%"></a>
   <p><a href="https://loopchii.github.io/.github/">Explore the interactive introduction ↗</a></p>
-  <img src="https://raw.githubusercontent.com/loopchii/.github/main/docs/assets/wordmark.svg" alt="LOOPCHii" width="120" height="24">
+  <img src="https://raw.githubusercontent.com/loopchii/.github/main/docs/assets/wordmark-ascii.svg" alt="LOOPCHii in pastel ASCII lettering. Curiosity is welcome here." width="100%">
   <p><sub>Technologies LLC · Questions worth staying with.</sub></p>
 </div>
 
