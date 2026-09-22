@@ -1,6 +1,6 @@
 # Code of Conduct
 
-Loopchii public collaboration should feel rigorous, welcoming, and useful.
+LOOPCHii public collaboration should feel rigorous, welcoming, and useful.
 
 ## We Expect
 

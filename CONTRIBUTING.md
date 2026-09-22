@@ -1,48 +1,21 @@
 # Contributing
 
-Thanks for taking the public surface seriously.
+Thanks for helping make the public work clearer and easier to use.
 
-This repository is for Loopchii's public GitHub profile and GitHub Pages front door. Contributions are welcome when they improve clarity, accessibility, link integrity, public documentation quality, and the usefulness of the public entry experience.
+This repository maintains our organization profile and GitHub Pages introduction. We welcome corrections, accessibility improvements, broken-link reports, and thoughtful improvements to public documentation.
 
-## Good Contributions
+## Before opening a pull request
 
-- Fix broken links or incorrect public references.
-- Improve accessibility, responsiveness, or performance of the Pages site.
-- Tighten language so it is clearer, calmer, and more precise.
-- Improve contribution guidance, public boundaries, or repository structure.
-- Refine the public site so it remains useful without over-teaching private implementation.
+1. Describe the problem and who the change helps.
+2. Keep claims factual and link to a public source when a correction needs evidence.
+3. Check links, keyboard navigation, mobile layout and reduced-motion behavior for website changes.
+4. Include only material you have permission to publish. Never include credentials, personal records or confidential information.
+5. Keep the scope focused so the change is easy to review.
 
-## Out of Scope
+For code contributions to [Stream](https://github.com/loopchii/Stream), follow that repository’s guidance. For collaborations or project inquiries, [contact the company](https://www.loopchii.com/contact/).
 
-- Requests for private runtime behavior.
-- Pull requests that attempt to reconstruct proprietary architecture.
-- Copy that turns the public surface into hype, fear marketing, or a product manual.
-- Customer support requests or deployment-specific troubleshooting.
+## Voice and visual identity
 
-## Before You Open A PR
+Write for a curious person arriving for the first time: clear, specific and welcoming. Explain the purpose of the work without overstating results. Preserve approved artwork and accessible alternatives to motion.
 
-1. Keep claims bounded and factual.
-2. Prefer simplicity over cleverness.
-3. Do not add proprietary mechanism language.
-4. Make sure local links and external links work.
-5. If you change the Pages site, test it in a browser before submitting.
-
-## Tone
-
-Loopchii public materials should read as:
-
-- serious
-- human
-- technically literate
-- clear without being over-explanatory
-
-They should not read as:
-
-- boastful
-- vague
-- theatrical
-- architecture-revealing
-
-## Questions
-
-If you are unsure whether something belongs in public, default to restraint and ask through [hello@loopchii.com](mailto:hello@loopchii.com).
+If you are unsure whether material belongs in public, ask before including it.

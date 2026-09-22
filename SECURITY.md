@@ -1,23 +1,7 @@
-# Security Policy
+# Security reporting
 
-If you believe you have found a security issue in a public Loopchii repository, please report it privately.
+If you find a security issue in this public repository or its website, please report it privately to [hello@loopchii.com](mailto:hello@loopchii.com).
 
-## Report Channel
+Include the affected URL or repository, a concise description, reproduction steps, and the expected and observed behavior. Share only the minimum information needed to understand the issue. Redact credentials and personal or customer data from screenshots and logs.
 
-Send reports to [hello@loopchii.com](mailto:hello@loopchii.com) with:
-
-- a concise summary
-- affected repository or page
-- reproduction steps
-- expected vs actual behavior
-- screenshots or logs if relevant
-
-## Please Do Not
-
-- open a public GitHub issue for a live security concern
-- include customer data or private credentials in a report
-- submit speculative architecture reconstructions as security findings
-
-## Scope Note
-
-This repository is a public profile and Pages surface. It does not contain private runtime systems or customer deployment logic. Reports should stay focused on the public repository content itself.
+Please do not post active vulnerabilities in public issues. Ordinary broken links, display issues and documentation corrections can be reported through the repository’s normal contribution process.

@@ -1,4 +1,4 @@
-name: Publish Open Field
+name: Publish public introduction
 
 on:
   push:
@@ -14,7 +14,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
