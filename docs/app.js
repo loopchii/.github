@@ -33,3 +33,34 @@ lensControls.addEventListener('click', e => {
   answer.classList.remove('arriving');
   requestAnimationFrame(() => requestAnimationFrame(() => answer.classList.add('arriving')));
 });
+// A small, local-only constellation. No scores, timers, accounts or stored activity.
+const board = document.querySelector('.constellation-board');
+const thoughtButtons = board.querySelector('.thought-buttons');
+const thoughtMessage = document.querySelector('.thought-message');
+const thoughtReset = document.querySelector('.thought-reset');
+const thoughtLine = board.querySelector('polyline');
+const thoughtCopy = {
+  notice: 'What did we miss?', voice: 'Who gets a say?', context: 'What might change?',
+  possibility: 'What is worth trying?', care: 'Could it be kinder?'
+};
+const collected = [];
+thoughtButtons.hidden = false;
+thoughtButtons.addEventListener('click', e => {
+  const button = e.target.closest('button[data-thought]');
+  if (!button || button.getAttribute('aria-pressed') === 'true') return;
+  button.setAttribute('aria-pressed', 'true');
+  const style = button.style;
+  collected.push({ key: button.dataset.thought, point: `${parseFloat(style.getPropertyValue('--x')) * 10},${parseFloat(style.getPropertyValue('--y')) * 4.2}` });
+  const complete = collected.length === 5;
+  thoughtLine.setAttribute('points', [...collected.map(t => t.point), ...(complete ? [collected[0].point] : [])].join(' '));
+  board.classList.toggle('complete', complete);
+  thoughtMessage.textContent = complete ? 'Five lights, one constellation. A small detour; a few questions worth taking with you.' : `${collected.length} of 5 lights · ${thoughtCopy[button.dataset.thought]}`;
+  thoughtReset.hidden = false;
+});
+thoughtReset.addEventListener('click', () => {
+  collected.length = 0; board.classList.remove('complete'); thoughtLine.setAttribute('points', '');
+  thoughtButtons.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', 'false'));
+  thoughtMessage.textContent = 'A fresh sky. Try a different order.';
+  thoughtReset.hidden = true;
+  thoughtButtons.querySelector('button').focus();
+});
